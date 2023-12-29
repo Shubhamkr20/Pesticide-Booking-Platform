@@ -1,0 +1,111 @@
+#heroPage {
+    height:100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../images/highres.png");
+    background-position: bottom center;
+    overflow-x: hidden;
+  }
+  
+  .heroPageNave {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding: 10px;
+  }
+  
+  .heropageLogo {
+    flex: 1;
+    width: 50px;
+    height: 150px;
+  }
+  
+  .heropageLogo img {
+    width: 150px;
+    height: 150px;
+  }
+  
+ 
+  
+  .menuItem {
+    margin: 0 10px;
+  }
+  
+
+
+  .heroDesc {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+    text-align: center;
+    background-color: rgba(245, 243, 204, 0.8);
+    padding: 45px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  }
+  
+  .heroDesc h2 {
+    font-size: 30px;
+    color: #4CAF50;
+    margin: 0 0 10px 0;
+  }
+  
+  .heroDesc h1 {
+    color: rgba(73, 50, 50, 0.8);
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  .heroDesc h3 {
+    color: #4CAF50;
+    font-size: 28px;
+    margin: 20px 0 10px 0;
+  }
+  
+  .heroDesc p {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+}
+  
+  .heroDesc button {
+    background-color: rgba(103, 93, 93, 0.8);
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .heroDesc button:hover {
+    background-color: rgba(48, 25, 25, 0.8);
+  }
+  
+
+
+
+  @media only screen and (max-width: 765px) {
+    .heroDesc {
+      padding: 20px;
+      width: auto;
+      margin: 10px;
+    }
+  }
+
+
+
+
+
+  

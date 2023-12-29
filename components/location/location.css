@@ -1,0 +1,101 @@
+#location-container {
+    position: relative; /* set container to relative position */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    /* background: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("../../images/map.png"); */
+    background-image: url("../../images/map.png");
+    background-position: center center;
+    overflow-x: hidden;
+  }
+  
+  #location-container::before {
+    content: "";
+    position: absolute; /* set pseudo-element to absolute position */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(116, 54, 54, 0.1); /* set overlay color with desired opacity */
+    z-index: -1; /* set z-index to be behind the container content */
+  }
+  
+  
+  .map {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+  
+  .address {
+    background-color:  rgba(0,0,0,.5);
+    margin-right: 30px;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.5;
+    color: aliceblue;
+  }
+  
+  .address h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .address p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    #location-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .map {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  
+    .address {
+      width: 50%;
+      text-align: left;
+      padding-left: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    #location-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .map,
+    .address {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+    }
+    
+    .address {
+      margin-top: 70px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .map{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 96%;
+        margin-top: 250px;
+    }
+  }

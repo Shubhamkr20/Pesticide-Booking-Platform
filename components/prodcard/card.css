@@ -1,0 +1,118 @@
+
+.s-box{
+    background-color: transparent;
+    width:350px;
+    height: 470px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    position: relative;
+  }
+
+  .s-b-img{
+    width: 100%;
+    height: 50%;
+  
+  }
+  .s-b-img img{
+    width:100%;
+    height: 100%;
+  
+  }
+
+  .s-b-title {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.9); /* white with 70% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+  }
+  
+
+  .s-b-title h2 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #000266a6;
+    font-size: 1.3rem;
+    font-family: calibri;
+    display: block;
+    display: -webkit-box;
+    max-width: 80%;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+  
+  .s-b-title small {
+    word-wrap: break-word;
+    margin: 5px;
+    color: #000266a6;
+    font-size: 1rem;
+    font-family: calibri;
+    display: block;
+    display: -webkit-box;
+    max-width: 80%;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+  
+  .s-b-title h2:hover {
+    color: #000266;
+  }
+
+  .s-b-title small:hover {
+    color: #000266;
+  }
+
+
+  .s-b-text{
+    width: 100%;
+    height: 40%;
+    background-color: rgba(255, 255, 255, 0.9); /* white with 70% opacity */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .s-b-text p{
+    color:#000266a6;
+    font-size: 1.1rem;
+    font-family: calibri;
+    display: block;
+    display: -webkit-box;
+    max-width: 80%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .s-b-text p:hover{
+    color:#000266;
+  }
+ 
+
+  
+  .s-box:hover{
+    transform:translateY(-10px);
+    transition: all ease 0.3s;
+  
+  }
+
+
+  @media (max-width: 300px) {
+
+    .s-b-title small {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+  }

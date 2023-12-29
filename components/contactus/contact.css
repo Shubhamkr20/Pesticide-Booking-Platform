@@ -1,0 +1,155 @@
+#ContactUsPage{
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../../images/cont.png");
+  background-position: center center;
+  overflow-x: hidden;
+
+}
+
+.contact-form-container {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-form {
+  width: 80%;
+  max-width: 500px;
+  background-color: rgba(0,0,0,.5);
+  padding: 30px;
+  padding-right: 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(245, 243, 204, 0.8);
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+  max-height: 200px; /* Maximum height of the textarea */
+  max-width: 100%; /* Maximum width of the textarea */
+  overflow: auto; /* Show a scrollbar if the text overflows */
+  word-wrap: break-word; /* Break words that are too long */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #00bfff;
+}
+
+.contact-form button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgba(103, 93, 93, 0.8);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: rgba(97, 73, 73, 0.8);
+}
+
+
+
+
+@media only screen and (max-width: 765px) {
+  .contact-form-container {
+    margin-top: 5px;
+    margin-left: 2px;
+    padding: 10px;
+    width: auto;
+  }
+}
+#ContactUsPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-form-container {
+  width: 400px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.error-message,
+.success-message,
+.message-sent-notification,
+.temporary-success-message {  /* Added a class for temporary success message */
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.error-message {
+  background-color: #ff7575;
+  color: #fff;
+}
+
+.success-message,
+.temporary-success-message {  /* Applied white color to the temporary success message */
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.message-sent-notification {
+  background-color: #007bff;
+  color: #fff;
+}
+

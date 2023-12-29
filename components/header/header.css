@@ -1,0 +1,110 @@
+#header {
+    background-color: #ede6e6;
+    color: #141414;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 10px;
+  }
+  
+  .headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  
+  .nav a {
+    color: #121212;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+  }
+  
+ 
+
+
+  
+  .left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+ .center{
+  flex:2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    
+ }
+
+ .center svg {
+  font-size: 35px;
+  color:  rgb(68, 66, 25);
+}
+
+.center svg:hover {
+  color: rgb(54, 23, 23);
+}
+
+
+.center a + a {
+  margin-left: 50px;
+}
+
+
+ .right{
+     flex: 1;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     
+    }
+
+    
+
+  .SocialIcon-instagram{
+        background-color: #E4405F ;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+     }
+     .SocialIcon-facebook{
+        background-color: #4053e4; ;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+
+    @media (max-width: 600px) {
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .center svg {
+        font-size: 35px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    
+      .center a + a {
+        margin-left: 10px;
+      }
+      
+    }

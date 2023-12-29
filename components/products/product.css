@@ -1,0 +1,46 @@
+#products{
+    height: 100vh;
+    background-size: cover;
+    background-image: url("../../images/bgprod.png");
+    background-position: center center;
+    overflow-x: hidden;
+
+}
+
+
+.b-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 100px;
+  
+  }
+
+/* Style for scrollbar thumb */
+#products::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+/* Style for scrollbar */
+#products::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Style for scrollbar track */
+#products::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+@media screen and (max-width: 767px) {
+    /* Adjust for smaller screens */
+    #products {
+      background-position: center top;
+      background-size: auto 100%;
+    }
+    .b-container{
+        flex-wrap: wrap;
+    }
+  }
